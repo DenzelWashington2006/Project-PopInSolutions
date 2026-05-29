@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pop In Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Context-specific Form Overrides for Clean Layout */
+        .form-group { margin-bottom: 20px; text-align: left; }
+        .form-group label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 5px; }
+        .form-group input, .form-group textarea { 
+            width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; font-size: 14px; 
+        }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Pop In Solutions</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container" style="padding-top: 140px; padding-bottom: 80px;">
+        <div class="benefits-grid">
+            
+            <div class="benefit-card" style="background: #ffffff;">
+                <h3 style="margin-bottom: 20px;">Send a Message</h3>
+                <form id="submissionForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" placeholder="name@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" placeholder="+27 73 525 8956" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message Context *</label>
+                        <textarea id="message" placeholder="Provide details about your project criteria..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn-alt" style="width: 100%; border-radius: 4px; cursor: pointer;">Submit Request</button>
+                </form>
+            </div>
+
+            <div class="benefit-card" style="background: #000000; color: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <h3 style="color: #ffffff; margin-bottom: 20px;">Corporate Information</h3>
+                    <p style="color: #ccc; margin-bottom: 20px;">Reach out directly via our verified communication paths for immediate engineering support[cite: 18].</p>
+                    
+                    <div style="margin-bottom: 15px; font-size: 15px;">
+                        <strong>Email Address:</strong><br>
+                        <span style="color: #aaa;">info@popinsolutions.co.za</span> [cite: 77]
+                    </div>
+                    <div style="margin-bottom: 15px; font-size: 15px;">
+                        <strong>Contact Number:</strong><br>
+                        <span style="color: #aaa;">(+27) 73 525 8956</span> [cite: 77]
+                    </div>
+                    <div style="margin-bottom: 15px; font-size: 15px;">
+                        <strong>Business Location:</strong><br>
+                        <span style="color: #aaa;">57 Mount Joy Reynecke Street, Heuwelsig, Bloemfontein, Free State, 9301</span> [cite: 79]
+                    </div>
+                    <div style="margin-bottom: 15px; font-size: 15px;">
+                        <strong>Company Registration Nr:</strong><br>
+                        <span style="color: #aaa;">2023/275423/07</span> [cite: 78]
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px; border-top: 1px solid #222; padding-top: 20px;">
+                    <strong style="display: block; margin-bottom: 10px; font-size: 14px;">Social Channels</strong>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" style="color: #fff; text-decoration: none; font-size: 13px; opacity: 0.7;">LinkedIn</a>
+                        <a href="#" style="color: #fff; text-decoration: none; font-size: 13px; opacity: 0.7;">GitHub</a>
+                        <a href="#" style="color: #fff; text-decoration: none; font-size: 13px; opacity: 0.7;">X / Twitter</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

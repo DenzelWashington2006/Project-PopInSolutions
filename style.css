@@ -1,0 +1,282 @@
+/* RESET & UNIVERSAL PROPERTIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Smooth transitions between nav links */
+}
+
+body {
+    background: #ffffff; /* Keeping to the required clean white/black aesthetic */
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* NAVIGATION BAR */
+nav {
+    position: fixed; /* Fixed the typo here */
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9); /* White frosted-glass corporate navbar */
+    backdrop-filter: blur(20px); /* Fixed the typo here */
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 100; /* Fixed the typo here */
+}
+ 
+nav h1 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
+}
+
+nav ul li a:hover {
+    opacity: 0.6;
+}
+
+/* HERO SECTION */
+.hero-section {
+    height: 100vh;
+    /* Clean, tech-appropriate abstract background image from Unsplash */
+    background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute; /* Fixed to cover the entire container background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75); /* Dark screen to ensure crisp white text contrast */
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 54px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Call-to-Action Buttons */
+.cta-btn, .cta-btn-alt {
+    display: inline-block;
+    padding: 14px 32px;
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px; /* Slightly squarer, professional corporate corners */
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: transparent;
+    color: #ffffff;
+}
+
+/* CONTAINER UTILITY */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* INTRODUCTION & WHY CHOOSE US SECTION */
+.intro-why-us {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.intro-block {
+    margin-bottom: 60px;
+}
+
+.intro-block h3, .why-choose-us h3, .services-preview h3, .footer-prompt h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.intro-block p {
+    font-size: 17px;
+    color: #444444;
+    max-width: 800px;
+}
+
+.benefits-grid, .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Clean layout from your code */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.benefit-card {
+    padding: 30px;
+    background: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.benefit-card h4, .service-card h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.benefit-card p, .service-card p {
+    color: #555555;
+    font-size: 15px;
+}
+
+/* SERVICES OVERVIEW SECTION */
+.services-preview {
+    padding: 100px 0;
+    background: #000000; /* High-contrast switch to black section */
+    color: #ffffff;
+}
+
+.service-card {
+    padding: 40px 30px;
+    background: #111111;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.service-card:hover {
+    border-color: #ffffff; /* Subtle hover effect matching branding guidelines */
+}
+
+.service-card p {
+    color: #aaaaaa;
+}
+
+.center-link {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.text-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+/* PROMPT & FOOTER METADATA */
+.footer-prompt {
+    padding: 100px 0 40px 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.footer-prompt p {
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.cta-btn-alt {
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+}
+
+.cta-btn-alt:hover {
+    background: transparent;
+    color: #000000;
+}
+
+.footer-divider {
+    margin: 60px 0 30px 0;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+}
+
+.footer-meta {
+    font-size: 13px;
+    color: #777777;
+}
+
+.footer-meta p {
+    margin-bottom: 8px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* MOBILE & TABLET MEDIA QUERIES */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 25px;
+    }
+    
+    nav h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .intro-why-us, .services-preview, .footer-prompt {
+        padding: 60px 0;
+    }
+}
